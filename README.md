@@ -210,6 +210,10 @@ File: MainActivity.kt
 ________________________________________
 3️ AndroidManifest.xml (Server & Client)
 Server App
+
+
+
+
         <service android:name=".SpeedMonitorService"
         android:exported="true"
         android:permission="android.permission.BIND_REMOTE_SERVICE">
@@ -219,5 +223,9 @@ Server App
         </service>
 
 Client App
+
+
+
+
         <uses-permission android:name="android.permission.BIND_REMOTE_SERVICE"/>
 
