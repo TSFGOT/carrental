@@ -15,12 +15,20 @@ ________________________________________
 Step 1: Create the AIDL Interface
 AidlInterface: ISpeedMonitorService.aidl
 Create this file in src/main/aidl/com/example/carrentalservice/
-package com.example.carrentalservice;
-interface ISpeedMonitorService {
-    void setSpeedLimit(String renterId, int speedLimit);
-    int getSpeedLimit(String renterId);
-    void registerListener(ISpeedMonitorCallback listener);
-}
+
+
+
+
+    package com.example.carrentalservice;
+    interface ISpeedMonitorService {
+       void setSpeedLimit(String renterId, int speedLimit);
+       int getSpeedLimit(String renterId);
+       void registerListener(ISpeedMonitorCallback listener);
+    }
+
+
+
+
 AidlInterface: ISpeedMonitorCallback.aidl
 This callback interface will notify the client when speed exceeds the limit.
 package com.example.carrentalservice;
@@ -30,6 +38,10 @@ interface ISpeedMonitorCallback {
 ________________________________________
 Step 2: Implement the Service
 Service Class: SpeedMonitorService.kt
+
+
+
+
 package com.example.carrentalservice
 
 import android.app.Service
