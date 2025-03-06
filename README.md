@@ -194,14 +194,14 @@ class MainActivity : Activity() {
 ________________________________________
 3️ AndroidManifest.xml (Server & Client)
 Server App
-<service android:name=".SpeedMonitorService"
+    <service android:name=".SpeedMonitorService"
     android:exported="true"
     android:permission="android.permission.BIND_REMOTE_SERVICE">
     <intent-filter>
         <action android:name="com.example.carrentalservice.SPEED_MONITOR_SERVICE" />
     </intent-filter>
-</service>
+    </service>
 
 Client App
-<uses-permission android:name="android.permission.BIND_REMOTE_SERVICE"/>
+    <uses-permission android:name="android.permission.BIND_REMOTE_SERVICE"/>
 
