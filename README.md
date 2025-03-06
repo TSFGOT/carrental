@@ -30,11 +30,16 @@ Create this file in src/main/aidl/com/example/carrentalservice/
 
 
 AidlInterface: ISpeedMonitorCallback.aidl
+
 This callback interface will notify the client when speed exceeds the limit.
-    package com.example.carrentalservice;
-    interface ISpeedMonitorCallback {
-         void onSpeedExceeded(String renterId, int currentSpeed);
-    }
+
+
+
+
+        package com.example.carrentalservice;
+            interface ISpeedMonitorCallback {
+             void onSpeedExceeded(String renterId, int currentSpeed);
+        }
 ________________________________________
 Step 2: Implement the Service
 Service Class: SpeedMonitorService.kt
