@@ -209,7 +209,8 @@ File: MainActivity.kt
 
 ________________________________________
 3️ AndroidManifest.xml (Server & Client)
-Server App
+
+# Server App
 
 
 
@@ -222,7 +223,7 @@ Server App
         </intent-filter>
         </service>
 
-Client App
+# Client App
 
 
 
