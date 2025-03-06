@@ -9,7 +9,7 @@ Features:
  Callback mechanism to notify speed violations
  Simulated speed monitoring
 ________________________________________
-1️ Server App (SpeedMonitorService)
+# 1️ Server App (SpeedMonitorService)
 This app runs as a background service in the vehicle, monitoring the speed and sending notifications when limits are exceeded.
 ________________________________________
 Step 1: Create the AIDL Interface
@@ -115,7 +115,7 @@ Service Class: SpeedMonitorService.kt
 ________________________________________
 
 
-2️ Client App (SpeedMonitorClient)
+# 2️ Client App (SpeedMonitorClient)
 The Client App binds to the SpeedMonitorService and interacts with it.
 ________________________________________
 Step 1: Define the Client Activity
@@ -208,7 +208,7 @@ File: MainActivity.kt
         }
 
 ________________________________________
-3️ AndroidManifest.xml (Server & Client)
+# 3️ AndroidManifest.xml (Server & Client)
 
 # Server App
 
